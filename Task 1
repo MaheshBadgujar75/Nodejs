@@ -5,8 +5,28 @@ const: Does not allow reassignment of the variable after its declaration and is 
   let x = 10;
   const y = 20;
 
-  x = 15; // Allowed
-  y = 25; // Error: Assignment to constant variable
+  console.log('Initial values:', x, y); // Outputs: 10, 20
 
-  console.log(x, y); // Outputs: 15, 20
+  x = 15; // Allowed
+  console.log('Updated x:', x); // Outputs: 15
+
+  try {
+    y = 25; // Error: Assignment to constant variable
+  } catch (error) {
+    console.error('Error:', error.message);
+  }
+
+  {
+    let x = 50;
+    const y = 60;
+    console.log('Inner block:', x, y); // Outputs: 50, 60
+  }
+
+  console.log('Outer block:', x, y); // Outputs: 15, 20
+}
+
+try {
+  console.log(x); // Error: x is not defined
+} catch (error) {
+  console.error('Error:', error.message);
 }
