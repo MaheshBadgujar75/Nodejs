@@ -1,0 +1,9 @@
+Q: Create a function that calculates the area of a rectangle, where the height has a default value of 10 if not provided.
+
+
+// Default value for height is 10 
+const calculateArea = (width, height = 10) => {
+  return width * height;
+};
+const area = calculateArea(5);
+console.log(`The area of the rectangle is: ${area}`); // Outputs: The area of the rectangle is: 50
