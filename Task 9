@@ -1,0 +1,22 @@
+Q: Write code to:
+1. Create a Set with unique values from an array [1, 2, 2, 3, 4, 4].
+2. Create a Map that stores a fruit name as a key and its color as a value (e.g., apple -> red).
+
+
+const numbers = [1, 2, 2, 3, 4, 4];
+
+// Using a Set to get unique values
+const uniqueNumbers = new Set(numbers);
+
+console.log(uniqueNumbers);
+
+
+const fruitColors = new Map();
+
+// Storing fruit name as key and its color as value
+fruitColors.set("apple", "red");
+fruitColors.set("banana", "yellow");
+fruitColors.set("cherry", "red");
+
+console.log(fruitColors);
+
