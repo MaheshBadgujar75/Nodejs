@@ -1,0 +1,21 @@
+Q: Write code that:
+1. Combines two arrays [1, 2, 3] and [4, 5, 6] into one array using the spread operator.
+2. Uses the rest operator to collect arguments passed to a function into an array.
+Promises
+
+
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+
+// Using the spread operator to combine arrays
+const combinedArray = [...array1, ...array2];
+
+console.log(combinedArray); // Outputs: [1, 2, 3, 4, 5, 6]
+
+
+// Function that uses the rest operator to collect arguments
+const collectArgs = (...args) => {
+  console.log(args); // Outputs the arguments as an array
+};
+
+collectArgs(1, 2, 3, 4, 5, 6); // Outputs: [1, 2, 3, 4, 5, 6]
