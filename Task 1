@@ -1,0 +1,12 @@
+let: Allows reassignment of the variable after its declaration but is block-scoped, meaning it is only accessible within the block it is defined.
+const: Does not allow reassignment of the variable after its declaration and is also block-scoped. However, if the variable is an object or array, its properties or elements can be modified.
+
+{
+  let x = 10;
+  const y = 20;
+
+  x = 15; // Allowed
+  y = 25; // Error: Assignment to constant variable
+
+  console.log(x, y); // Outputs: 15, 20
+}
