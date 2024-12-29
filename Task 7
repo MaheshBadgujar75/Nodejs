@@ -1,0 +1,11 @@
+Q: Create a promise that resolves after 2 seconds with the message "Promise resolved!". Log the message to the console when it resolves.
+
+const myPromise = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve("Promise resolved!");
+  }, 2000);
+});
+
+myPromise.then((message) => {
+  console.log(message); 
+});
